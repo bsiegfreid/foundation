@@ -41,5 +41,5 @@ ENV C_INCLUDE_PATH="$C_INCLUDE_PATH:/usr/local/pgsql/include"
 
 # Install base Python libraries
 RUN python3 -m pip install setuptools cython numpy scipy astropy \
-  && python3 -m pip install psycopg[c,pool]==$PSYCOPG_VERSION
+  && python3 -m pip install psycopg[binary,pool]==$PSYCOPG_VERSION
 
